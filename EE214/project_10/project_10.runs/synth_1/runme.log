@@ -1,0 +1,316 @@
+
+*** Running vivado
+    with args -log wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrapper.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source wrapper.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/rojin/EE214/project_10/project_10.srcs/utils_1/imports/synth_1/wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/rojin/EE214/project_10/project_10.srcs/utils_1/imports/synth_1/wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top wrapper -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9204
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/EE214/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1819.055 ; gain = 410.773
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wrapper' [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/wrapper.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/wrapper.v:40]
+INFO: [Synth 8-6157] synthesizing module 'bin2BCD' [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/bin2bcd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin2BCD' (0#1) [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/bin2bcd.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'bin' does not match port width (14) of module 'bin2BCD' [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/wrapper.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ssegController' [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/ssegController.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dispClk' [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/dispClk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dispClk' (0#1) [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/dispClk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/mux.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/mux.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ssegDecoder' [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/ssegDecoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ssegDecoder' (0#1) [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/ssegDecoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ssegAnodeDecoder' [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/ssegAnodeDecoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ssegAnodeDecoder' (0#1) [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/ssegAnodeDecoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ssegController' (0#1) [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/ssegController.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wrapper' (0#1) [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/wrapper.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1910.848 ; gain = 502.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1910.848 ; gain = 502.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1910.848 ; gain = 502.566
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1910.848 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[0]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[1]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[2]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[0]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[1]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[2]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[7]'. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/rojin/EE214/project_10/project_10.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2002.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2002.016 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/EE214/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [C:/Users/rojin/EE214/project_10/project_10.srcs/sources_1/new/wrapper.v:41]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 32    
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   15 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 24    
+	   4 Input    4 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (result_reg[15]) is unused and will be removed from module wrapper.
+WARNING: [Synth 8-3332] Sequential element (result_reg[14]) is unused and will be removed from module wrapper.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     2|
+|4     |LUT2   |    26|
+|5     |LUT3   |     5|
+|6     |LUT4   |     9|
+|7     |LUT5   |    14|
+|8     |LUT6   |    29|
+|9     |FDRE   |    35|
+|10    |LD     |    10|
+|11    |IBUF   |    14|
+|12    |OBUF   |    11|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 2002.016 ; gain = 593.734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 2002.016 ; gain = 502.566
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 2002.016 ; gain = 593.734
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2002.016 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2002.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  LD => LDCE: 10 instances
+
+Synth Design complete, checksum: 7962b7fd
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 25 Warnings, 20 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 2002.016 ; gain = 974.023
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/rojin/EE214/project_10/project_10.runs/synth_1/wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file wrapper_utilization_synth.rpt -pb wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  4 12:21:59 2023...

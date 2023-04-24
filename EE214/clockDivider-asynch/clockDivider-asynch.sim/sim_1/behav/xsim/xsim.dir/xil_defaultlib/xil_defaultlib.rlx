@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/rojin/EE214/clockDivider-asynch/clockDivider-asynch.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/rojin/EE214/clockDivider-asynch/clockDivider-asynch.srcs/sim_1/new/tb.v,1679456671,verilog,,,,tb,,,,,,,,
+C:/Users/rojin/EE214/clockDivider-asynch/clockDivider-asynch.srcs/sources_1/new/clk_divider.v,1679457420,verilog,,C:/Users/rojin/EE214/clockDivider-asynch/clockDivider-asynch.srcs/sources_1/new/dff.v,,clk_divider,,,,,,,,
+C:/Users/rojin/EE214/clockDivider-asynch/clockDivider-asynch.srcs/sources_1/new/dff.v,1679457420,verilog,,C:/Users/rojin/EE214/clockDivider-asynch/clockDivider-asynch.srcs/sim_1/new/tb.v,,dff,,,,,,,,

@@ -1,0 +1,399 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Mar 28 10:52:27 2023
+# Process ID: 22620
+# Current directory: C:/Users/rojin/EE214/project_8_5/project_8_5.runs/synth_1
+# Command line: vivado.exe -log wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrapper.tcl
+# Log file: C:/Users/rojin/EE214/project_8_5/project_8_5.runs/synth_1/wrapper.vds
+# Journal file: C:/Users/rojin/EE214/project_8_5/project_8_5.runs/synth_1\vivado.jou
+# Running On: Rojin, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16831 MB
+#-----------------------------------------------------------
+source wrapper.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/utils_1/imports/synth_1/wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/utils_1/imports/synth_1/wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top wrapper -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22360
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/EE214/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1818.402 ; gain = 409.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wrapper' [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/wrapper.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ClkDivider' [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/ClkDivider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClkDivider' (0#1) [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/ClkDivider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BCD' [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/bcd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BCD' (0#1) [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/bcd.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/counter.v:24]
+WARNING: [Synth 8-6090] variable 'counterout' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/counter.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/counter.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Mux' [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/Mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux' (0#1) [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/Mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven' [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/seven.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/seven.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'seven' (0#1) [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/seven.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'sseg' does not match port width (7) of module 'seven' [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/wrapper.v:106]
+INFO: [Synth 8-6157] synthesizing module 'Decoder2_4' [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/Decoder2_4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder2_4' (0#1) [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/Decoder2_4.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'I' does not match port width (2) of module 'Decoder2_4' [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/wrapper.v:111]
+WARNING: [Synth 8-689] width (7) of port connection 'Y' does not match port width (4) of module 'Decoder2_4' [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/wrapper.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'wrapper' (0#1) [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/wrapper.v:23]
+WARNING: [Synth 8-3917] design wrapper has port seg_cat[6] driven by constant 0
+WARNING: [Synth 8-3917] design wrapper has port seg_cat[5] driven by constant 0
+WARNING: [Synth 8-3917] design wrapper has port seg_cat[4] driven by constant 0
+WARNING: [Synth 8-7129] Port rst in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[1] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[24] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[23] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[22] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[21] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[20] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[19] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[18] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[17] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[16] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[15] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[14] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[13] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[12] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[11] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[10] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[9] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[8] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[7] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[6] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[5] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[4] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[3] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[2] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[1] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[0] in module wrapper is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1907.570 ; gain = 498.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1907.570 ; gain = 498.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1907.570 ; gain = 498.918
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1907.570 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[0]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[1]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[2]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[0]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[1]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[2]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[7]'. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1989.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1989.367 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/EE214/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'sseg_reg' [C:/Users/rojin/EE214/project_8_5/project_8_5.srcs/sources_1/new/seven.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 4     
+	  11 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design wrapper has port seg_cat[6] driven by constant 0
+WARNING: [Synth 8-3917] design wrapper has port seg_cat[5] driven by constant 0
+WARNING: [Synth 8-3917] design wrapper has port seg_cat[4] driven by constant 0
+WARNING: [Synth 8-7129] Port rst in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[1] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[24] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[23] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[22] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[21] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[20] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[19] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[18] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[17] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[16] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[15] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[14] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[13] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[12] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[11] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[10] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[9] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[8] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[7] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[6] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[5] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[4] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[3] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[2] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[1] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port terminalcount[0] in module wrapper is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (input_seven/sseg_reg[6]) is unused and will be removed from module wrapper.
+WARNING: [Synth 8-3332] Sequential element (input_seven/sseg_reg[5]) is unused and will be removed from module wrapper.
+WARNING: [Synth 8-3332] Sequential element (input_seven/sseg_reg[4]) is unused and will be removed from module wrapper.
+WARNING: [Synth 8-3332] Sequential element (input_seven/sseg_reg[3]) is unused and will be removed from module wrapper.
+WARNING: [Synth 8-3332] Sequential element (input_seven/sseg_reg[2]) is unused and will be removed from module wrapper.
+WARNING: [Synth 8-3332] Sequential element (input_seven/sseg_reg[1]) is unused and will be removed from module wrapper.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     5|
+|4     |LUT2   |    36|
+|5     |LUT3   |     6|
+|6     |LUT4   |    12|
+|7     |LUT5   |     2|
+|8     |LUT6   |     7|
+|9     |FDCE   |    46|
+|10    |IBUF   |     3|
+|11    |OBUF   |    11|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1989.367 ; gain = 580.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 47 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1989.367 ; gain = 498.918
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1989.367 ; gain = 580.715
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1989.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1989.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a5fd4bb8
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 111 Warnings, 21 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1989.367 ; gain = 962.469
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/rojin/EE214/project_8_5/project_8_5.runs/synth_1/wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file wrapper_utilization_synth.rpt -pb wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 28 10:52:56 2023...
