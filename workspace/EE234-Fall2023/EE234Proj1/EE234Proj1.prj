@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="EE234Proj1" location="C:/Users/rojin/workspace/EE234Proj1" platform="C:/Users/rojin/workspace/blackboard_1/export/blackboard_1/blackboard_1.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="EE234Proj1_system" sysConfig="blackboard_1" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="4105dfb2b932852057e1191921579046">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.463708600">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.562432986" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
